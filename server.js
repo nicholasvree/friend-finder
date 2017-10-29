@@ -2,7 +2,7 @@ var express = require ("express")
 var bodyParser = require("body-parser")
 var path = require("path")
 
-app = express()
+var  app = express()
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -15,18 +15,11 @@ require('./app/routing/htmlRoutes.js')(app)
 
 
 
-//var port = 3000;
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8080;
 
-	// app.get('/api/friends', function(req,res){
 
-	// 	console.log("check")
-	// 	res.json(friendsData)
-	// })
 
 
 app.listen(PORT, function() {
-  console.log("App listening on PORT :" + PORT);
+  console.log("App listening on PORT: " + PORT);
 });
-
-
