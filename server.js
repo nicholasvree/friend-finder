@@ -1,12 +1,17 @@
-var express = require ("express")
-var bodyParser = require("body-parser")
-var path = require("path")
+// Dependencies
+// =============================================================
+var express = require("express");
+var bodyParser = require("body-parser");
+var path = require("path");
 
-var  app = express()
+// Sets up the Express App
+// =============================================================
+var app = express();
+var port = process.env.PORT || 3000;
 
-// parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }))
-app.use(bodyParser.json())
+// Sets up the Express app to handle data parsing
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 var friendsData = require('./app/data/friendsdata.js')
 require('./app/routing/apiRoutes.js')(app)
@@ -15,11 +20,6 @@ require('./app/routing/htmlRoutes.js')(app)
 
 
 
-var PORT = process.env.PORT || 8080;
-
-
-
-
-app.listen(PORT, function() {
-  console.log("App listening on PORT: " + PORT);
+app.listen(port, function() {
+  console.log("App listening on PORT: " + port);
 });
