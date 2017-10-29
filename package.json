@@ -1,29 +1,22 @@
 {
   "name": "friendfinder",
-  "version": "1.0.0",
-  "engines": {
-    "node": "6.11.4"
+  "version": "1.0.1",
+  "engines":{
+    "node":"6.11.4"
   },
-  "description": "This app helps find lonely people new friends!",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zaynaib/FriendFinder.git"
-  },
-  "author": "Nick Vree",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zaynaib/FriendFinder/issues"
-  },
-  "homepage": "https://github.com/zaynaib/FriendFinder#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "nodemon": "^1.12.1",
-    "path": "^0.12.7"
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  },
+  "engines": {
+    "node": "5.3.0"
   }
 }
