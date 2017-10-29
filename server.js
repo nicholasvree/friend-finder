@@ -15,7 +15,7 @@ require('./app/routing/htmlRoutes.js')(app)
 
 
 
-var port = 8080;
+// var port = 8080;
 var PORT = process.env.PORT || 3000;
 
 	// app.get('/api/friends', function(req,res){
