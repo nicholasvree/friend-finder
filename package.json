@@ -1,6 +1,9 @@
 {
   "name": "friend-finder",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.11.1"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -13,4 +16,5 @@
     "express": "^4.16.2",
     "path": "^0.12.7"
   }
+
 }
