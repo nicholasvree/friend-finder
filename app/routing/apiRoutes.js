@@ -11,14 +11,11 @@ module.exports = function(app) {
 		res.json(friendsData)
 	})
 
-	//add a post route to push the data into friendsData
 
 	app.post('/api/friends', function(req,res){
-		//console.log(req.body)
 
 		friendsData.push(req.body)
 
-		//console.log(req.body.scores)
 	// })
 
 		console.log(friendsData)
