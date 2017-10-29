@@ -15,8 +15,8 @@ require('./app/routing/htmlRoutes.js')(app)
 
 
 
-var port = 3000;
-var port = process.env.PORT || 3000;
+//var port = 3000;
+var PORT = process.env.PORT || 3000;
 
 	// app.get('/api/friends', function(req,res){
 
